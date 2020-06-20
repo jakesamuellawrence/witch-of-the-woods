@@ -1,0 +1,16 @@
+{
+    "name": "Eating",
+    "references": [
+        "GUID:a5832f072f485cb418f194e8ea5a90b9",
+        "GUID:b0198d2af7a743e49a93790f61d6835a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

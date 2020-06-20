@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace ItemProperties {
+    public class Food : MonoBehaviour {
+
+        public float eat_radius = 2; // how far away something has to be to eat this
+        public float eat_time = 4; // how long it takes for this food to be eaten
+
+        private float time_remaining;
+
+        private void Awake() {
+            time_remaining = eat_time;
+        }
+
+        public void FinishEating() {
+            gameObject.SetActive(false);
+        }
+
+        private void OnDrawGizmosSelected() {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, eat_radius);
+        }
+
+    }
+}
