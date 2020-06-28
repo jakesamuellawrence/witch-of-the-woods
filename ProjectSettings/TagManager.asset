@@ -16,7 +16,7 @@ TagManager:
   - Ground
   - Obstacles
   - Items
-  - 
+  - Effects
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Entities
     uniqueID: 189648211
+    locked: 0
+  - name: Effects
+    uniqueID: 1479283819
     locked: 0
   - name: UI
     uniqueID: 3811967677

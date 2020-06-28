@@ -36,7 +36,6 @@ namespace AI {
 
         private void FixedUpdate() {
             animator.SetFloat("Horizontal", facing.x);
-            animator.SetFloat("Vertical", facing.y);
 
             if (path == null) {
                 animator.SetBool("walking", false);

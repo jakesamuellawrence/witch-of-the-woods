@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5037d62db6f3914f98e213c5a3e09e7, type: 3}
   m_Name: BoarSlash
   m_EditorClassIdentifier: 
-  distance: 0.7
+  distance: 1.5
   radius: 1
   damage: 40
-  wind_up_time: 0.5
+  wind_up_time: 0.75
+  activation_time: 0.5
   wind_down_time: 1
+  slash_effect_prefab: {fileID: 2824323613329200578, guid: 4ae2413ea098d4a4fad62683a69b0a72,
+    type: 3}

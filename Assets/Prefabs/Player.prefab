@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 5067180736252401372}
   - component: {fileID: 5067180736252401363}
   - component: {fileID: 5067180736252401361}
-  - component: {fileID: 5067180736252401362}
   - component: {fileID: 5067180736252401360}
   - component: {fileID: 768181278763508590}
+  - component: {fileID: 974425113}
+  - component: {fileID: 974425114}
+  - component: {fileID: 974425118}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -83,24 +85,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5067180736252401362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5067180736252401373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab6e5ab98d3243847abe88d0de88cc73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  max_speed: 8
-  acceleration: 30
-  dash_distance: 3.5
-  dash_time: 0.15
-  dash_cooldown: 2
-  animator: {fileID: 0}
 --- !u!58 &5067180736252401360
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130,6 +114,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_health: 100
+--- !u!114 &974425113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067180736252401373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093ab873f95c3984db2e4f01e09e8333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walk_speed_fraction: 0.5
+  hold_instrument_speed_fraction: 0.25
+  note_queue: 
+--- !u!114 &974425114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067180736252401373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d925a41ea88feae428fd9cd0639c7750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  base_health: 100
+  base_movespeed: 10
+  base_strength: 1
+--- !u!114 &974425118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067180736252401373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3980239583cbca24c99e5fdce3ea210c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5067180736849468922
 GameObject:
   m_ObjectHideFlags: 0

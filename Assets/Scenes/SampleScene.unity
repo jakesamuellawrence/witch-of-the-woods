@@ -485,46 +485,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f393108e64cd1e42bdaf4306a23064c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &974425113
+--- !u!114 &974425113 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5067180736689363659}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974425110}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 093ab873f95c3984db2e4f01e09e8333, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walk_speed_fraction: 0.5
-  hold_instrument_speed_fraction: 0.25
-  note_queue: 
---- !u!114 &974425114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974425110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d925a41ea88feae428fd9cd0639c7750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  base_health: 100
-  base_movespeed: 10
-  base_strength: 1
---- !u!114 &974425118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974425110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3980239583cbca24c99e5fdce3ea210c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1004001325
@@ -589,15 +559,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2586171293971315058, guid: f7af70cb9281ef847a41519f5586ab74,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2586171293971315058, guid: f7af70cb9281ef847a41519f5586ab74,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2586171293971315058, guid: f7af70cb9281ef847a41519f5586ab74,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2586171293971315066, guid: f7af70cb9281ef847a41519f5586ab74,
         type: 3}
       propertyPath: m_Name
       value: Boar
-      objectReference: {fileID: 0}
-    - target: {fileID: 2586171293971315066, guid: f7af70cb9281ef847a41519f5586ab74,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6690174272204485040, guid: f7af70cb9281ef847a41519f5586ab74,
         type: 3}
@@ -6737,8 +6717,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5067180736252401362, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
 --- !u!1001 &6447504953884267662
 PrefabInstance:
