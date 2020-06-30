@@ -2,7 +2,8 @@
     "name": "Eating",
     "references": [
         "GUID:a5832f072f485cb418f194e8ea5a90b9",
-        "GUID:b0198d2af7a743e49a93790f61d6835a"
+        "GUID:b0198d2af7a743e49a93790f61d6835a",
+        "GUID:e8dc84f929a547348b260720fb621904"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

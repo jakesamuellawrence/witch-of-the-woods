@@ -7,12 +7,7 @@ namespace ItemProperties {
 
         public float eat_radius = 2; // how far away something has to be to eat this
         public float eat_time = 4; // how long it takes for this food to be eaten
-
-        private float time_remaining;
-
-        private void Awake() {
-            time_remaining = eat_time;
-        }
+        public float anger_healed = 20;
 
         public void FinishEating() {
             gameObject.SetActive(false);
