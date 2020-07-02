@@ -7,6 +7,7 @@ using Util;
 using CreatureProperties;
 using System.Runtime.InteropServices;
 using System.Reflection;
+using Anger;
 
 namespace AITasks {
     public class AttackTargetTask : AITask {
@@ -30,7 +31,7 @@ namespace AITasks {
 
         public override IEnumerator DoTask() {
             while (true) {
-                if (target.dead) {
+                if (target.dead || executing_controller.GetComponent<Angry>().anger_state >= AngerState.Calm) {
                     FinishTask();
                 }
                 if (selected_attack == null) {

@@ -26,7 +26,7 @@ namespace CreatureProperties {
         }
 
         private void Start() {
-            InvokeRepeating("CheckForFood", food_detect_rate, food_detect_rate);
+            InvokeRepeating("CheckForFood", 0.1f, food_detect_rate);
         }
 
         public void CheckForFood() {
