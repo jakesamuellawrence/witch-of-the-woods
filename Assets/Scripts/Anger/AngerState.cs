@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace Anger {
     public enum AngerState {
-        Asleep,
-        Sleepy,
-        Calm,
+        Enraged,
         Angry,
-        Enraged
+        Calm,
+        Sleepy,
+        Asleep
     }
 }
