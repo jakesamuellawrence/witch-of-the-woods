@@ -46,7 +46,7 @@ namespace Anger {
         }
 
         private void Update() {
-            Debug.Log(name + ", " + current_anger + ", " + anger_state);
+            //Debug.Log(name + ", " + current_anger + ", " + anger_state);
         }
 
     }

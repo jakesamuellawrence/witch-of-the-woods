@@ -10,7 +10,8 @@ namespace Spells {
 
         private void Awake() {
             spells = new Spell[] {
-            new HasteSpell()
+            new HasteSpell(),
+            new ArpeggioRiff()
         };
         }
 
