@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
+using Stats;
 using UnityEngine;
-using Util;
 
 namespace AI {
     [RequireComponent(typeof(Seeker), typeof(Rigidbody2D)), RequireComponent(typeof(StatBlock))]

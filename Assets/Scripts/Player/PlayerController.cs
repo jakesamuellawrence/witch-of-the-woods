@@ -1,8 +1,8 @@
 ﻿using Spells;
+using Stats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Util;
 
 namespace Player {
     [RequireComponent(typeof(Rigidbody2D)), RequireComponent(typeof(StatBlock))]
@@ -10,7 +10,6 @@ namespace Player {
 
         public float walk_speed_fraction;
         public float hold_instrument_speed_fraction;
-        public List<Note> note_queue;
 
         private Vector2 movement_direction;
         private Vector2 facing;
@@ -32,7 +31,6 @@ namespace Player {
             rigidbody2d = GetComponent<Rigidbody2D>();
             animator = GetComponentInChildren<Animator>();
             statblock = GetComponent<StatBlock>();
-            note_queue = new List<Note>();
             spellbook = GetComponent<SpellBook>();
 
             input_actions.General.Movement.performed += context => movement_direction = context.ReadValue<Vector2>().magnitude <= 1 ? context.ReadValue<Vector2>() : context.ReadValue<Vector2>().normalized;
@@ -47,16 +45,16 @@ namespace Player {
         }
 
         private void PlayCNote() {
-            note_queue.Add(Note.C);
+            spellbook.AddNote(Note.C);
         }
         private void PlayDNote() {
-            note_queue.Add(Note.D);
+            spellbook.AddNote(Note.D);
         }
         private void PlayENote() {
-            note_queue.Add(Note.E);
+            spellbook.AddNote(Note.E);
         }
         private void PlayFNote() {
-            note_queue.Add(Note.F);
+            spellbook.AddNote(Note.F);
         }
 
         private void StartHoldingInstrument() {
@@ -66,8 +64,7 @@ namespace Player {
         private void StopHoldingInstrument() {
             input_actions.InstrumentOut.Disable();
             statblock.movespeed.RemoveMultiplier(hold_instrument_speed_fraction);
-            spellbook.ActivateSpells(note_queue.ToArray());
-            note_queue.Clear();
+            spellbook.ActivateSpells();
         }
 
         private void StartWalking() {

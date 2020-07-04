@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Util {
+namespace Stats {
     public class Stat {
 
         private float base_value;
@@ -11,8 +11,8 @@ namespace Util {
 
         public Stat(float base_value) {
             this.base_value = base_value;
-            this.modifiers = new List<float>();
-            this.multipliers = new List<float>();
+            modifiers = new List<float>();
+            multipliers = new List<float>();
         }
 
         public float value {

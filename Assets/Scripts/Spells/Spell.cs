@@ -5,13 +5,14 @@ using UnityEditor.MemoryProfiler;
 using UnityEngine;
 
 namespace Spells {
-    public abstract class Spell {
+    public abstract class Spell : ScriptableObject {
+        public abstract float range { get; }
 
-        protected Note[] activation_code;
+        public Note[] activation_code;
 
-        protected abstract void Activate(PlayerController executing_controller);
+        protected abstract void Activate(SpellBook executing_object);
 
-        public void CheckForActivation(Note[] note_queue, PlayerController executing_controller) {
+        public void CheckForActivation(Note[] note_queue, SpellBook executing_object) {
             if (note_queue.Length != activation_code.Length) {
                 return;
             }
@@ -20,7 +21,7 @@ namespace Spells {
                     return;
                 }
             }
-            Activate(executing_controller);
+            Activate(executing_object);
         }
 
     }

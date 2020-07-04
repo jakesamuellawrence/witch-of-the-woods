@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Util {
+namespace Stats {
     public class StatBlock : MonoBehaviour {
 
         [SerializeField]

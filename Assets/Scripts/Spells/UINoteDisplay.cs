@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Spells;
 
 namespace UI {
     public class UINoteDisplay : MonoBehaviour {
 
         public GameObject[] note_prefabs;
-        public PlayerController player_controller;
+        public SpellBook spellbook;
 
         private float old_notes_length = 0;
 
@@ -20,7 +21,7 @@ namespace UI {
         }
 
         private void Update() {
-            Note[] notes = player_controller.note_queue.ToArray();
+            Note[] notes = spellbook.GetNotes();
             if (notes.Length != old_notes_length) {
                 UpdateDisplay(notes);
                 old_notes_length = notes.Length;

@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿using Stats;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Util;
 
 namespace Conditions {
     public class HasteCondition : Condition {
 
-        private readonly float speed_multiplier = 2;
+        private float speed_multiplier;
         
-        public HasteCondition(float duration, StatBlock statblock) : base(duration, statblock, "haste") {}
+        public HasteCondition(float duration, StatBlock statblock, float speed_multiplier) : base(duration, statblock, "haste") {
+            this.speed_multiplier = speed_multiplier;
+        }
 
         public override void StartCondition() {
             base.StartCondition();
