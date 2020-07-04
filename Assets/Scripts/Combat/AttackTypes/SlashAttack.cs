@@ -51,7 +51,7 @@ namespace AttackTypes {
                 foreach (Collider2D collider in colliders) { 
                     Killable killable = collider.GetComponent<Killable>();
                     if (collider != executing_controller.GetComponent<Collider2D>() && killable != null) {
-                        killable.Damage(damage);
+                        killable.Damage(hitDamage);
                         has_hit = true;
                     }
                 }

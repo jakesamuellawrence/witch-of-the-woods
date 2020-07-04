@@ -47,7 +47,7 @@ namespace AttackTypes {
                     if (executing_controller.GetComponent<Collider2D>() != collider) {
                         has_collided = true;
                         if (killable != null && !killable.dead) {
-                            killable.Damage(damage);
+                            killable.Damage(hitDamage);
                         }
                     }
                 }

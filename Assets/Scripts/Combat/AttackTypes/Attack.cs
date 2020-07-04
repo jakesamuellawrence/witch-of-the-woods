@@ -6,6 +6,7 @@ using AI;
 using Util;
 using System.Runtime.InteropServices;
 using CreatureProperties;
+using Stats;
 
 namespace AttackTypes {
     public abstract class Attack : ScriptableObject {
@@ -20,16 +21,24 @@ namespace AttackTypes {
             }
         }
 
+        public virtual float hitDamage {
+            get {
+                return damage * statblock.strength.value;
+            }
+        }
+
         public float wind_up_time;
         public float activation_time;
         public float wind_down_time;
 
         protected AIController executing_controller;
         protected Animator animator;
+        protected StatBlock statblock;
 
         public virtual void Activate(AIController executing_controller) {
             this.executing_controller = executing_controller;
             animator = executing_controller.GetComponentInChildren<Animator>();
+            statblock = executing_controller.GetComponent<StatBlock>();
             CoroutineScheduler.instance.StartCoroutine(DoAttack());
         }
 
