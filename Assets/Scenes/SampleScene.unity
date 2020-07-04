@@ -658,6 +658,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093ab873f95c3984db2e4f01e09e8333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &974425114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5067180736689363659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974425110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3980239583cbca24c99e5fdce3ea210c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1004001325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6893,6 +6905,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: spells.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: spells.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4cf30bfe6efcc024297ca3d1f4ed8be2,
+        type: 2}
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: spells.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4491bd4ebe0865d43acf920695f4a177,
+        type: 2}
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: selected_spell
+      value: 
+      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
+        type: 2}
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: displayed_spell
+      value: 
+      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
+        type: 2}
+    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: spells.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
+        type: 2}
     - target: {fileID: 5067180736252401361, guid: a7b449199eca5284ca18be12cf5596b8,
         type: 3}
       propertyPath: m_Material
@@ -7241,6 +7282,11 @@ PrefabInstance:
       propertyPath: player_controller
       value: 
       objectReference: {fileID: 974425113}
+    - target: {fileID: 7839647675111516827, guid: 235ed8af7f0b3a740b3d2657e1728a56,
+        type: 3}
+      propertyPath: spellbook
+      value: 
+      objectReference: {fileID: 974425114}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 235ed8af7f0b3a740b3d2657e1728a56, type: 3}
 --- !u!1001 &7931281965810172128

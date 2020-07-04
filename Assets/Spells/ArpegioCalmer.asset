@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0e9da8f9df6a2499275a04a2556198, type: 3}
   m_Name: ArpegioCalmer
   m_EditorClassIdentifier: 
-  activation_code: 
-  anger_healed: 0
-  effect_radius: 0
+  activation_code: 00000000010000000200000003000000020000000100000000000000
+  anger_healed: 15
+  effect_radius: 10

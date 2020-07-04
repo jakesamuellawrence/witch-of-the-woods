@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acc91c83177b83448130620599ca07d, type: 3}
   m_Name: SuperHaste
   m_EditorClassIdentifier: 
-  activation_code: 
-  speed_multiplier: 0
-  duration: 0
+  activation_code: 0300000001000000030000000100000003000000010000000300000001000000
+  speed_multiplier: 8
+  duration: 20
