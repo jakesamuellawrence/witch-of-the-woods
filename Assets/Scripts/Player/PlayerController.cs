@@ -11,6 +11,8 @@ namespace Player {
         public float walk_speed_fraction;
         public float hold_instrument_speed_fraction;
 
+        public AudioClip[] note_sounds;
+
         private Vector2 movement_direction;
         private Vector2 facing;
 
@@ -46,15 +48,19 @@ namespace Player {
 
         private void PlayCNote() {
             spellbook.AddNote(Note.C);
+            SoundManager.instance.Play(note_sounds[(int)Note.C]);
         }
         private void PlayDNote() {
             spellbook.AddNote(Note.D);
+            SoundManager.instance.Play(note_sounds[(int)Note.D]);
         }
         private void PlayENote() {
             spellbook.AddNote(Note.E);
+            SoundManager.instance.Play(note_sounds[(int)Note.E]);
         }
         private void PlayFNote() {
             spellbook.AddNote(Note.F);
+            SoundManager.instance.Play(note_sounds[(int)Note.F]);
         }
 
         private void StartHoldingInstrument() {

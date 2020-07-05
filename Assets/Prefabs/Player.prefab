@@ -128,7 +128,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk_speed_fraction: 0.5
   hold_instrument_speed_fraction: 0.25
-  note_queue: 
 --- !u!114 &974425114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +155,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3980239583cbca24c99e5fdce3ea210c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spells:
+  - {fileID: 11400000, guid: 4cf30bfe6efcc024297ca3d1f4ed8be2, type: 2}
+  - {fileID: 11400000, guid: 4491bd4ebe0865d43acf920695f4a177, type: 2}
+  - {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966, type: 2}
+  displayed_spell: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966, type: 2}
 --- !u!1 &5067180736849468922
 GameObject:
   m_ObjectHideFlags: 0

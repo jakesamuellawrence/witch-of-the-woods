@@ -752,6 +752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boar
       objectReference: {fileID: 0}
+    - target: {fileID: 6031879918916699345, guid: f7af70cb9281ef847a41519f5586ab74,
+        type: 3}
+      propertyPath: base_strength
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6690174272204485040, guid: f7af70cb9281ef847a41519f5586ab74,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -6766,7 +6771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 1
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -7230,22 +7235,22 @@ PrefabInstance:
     - target: {fileID: 7839647675111516826, guid: 235ed8af7f0b3a740b3d2657e1728a56,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 455
+      value: 466
       objectReference: {fileID: 0}
     - target: {fileID: 7839647675111516826, guid: 235ed8af7f0b3a740b3d2657e1728a56,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 89
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 7839647675111516826, guid: 235ed8af7f0b3a740b3d2657e1728a56,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 865.1809
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 7839647675111516826, guid: 235ed8af7f0b3a740b3d2657e1728a56,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 140
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7839647675111516826, guid: 235ed8af7f0b3a740b3d2657e1728a56,
         type: 3}
