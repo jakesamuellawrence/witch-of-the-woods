@@ -10,6 +10,8 @@ namespace Spells {
 
         public Note[] activation_code;
 
+        public AudioClip activation_song;
+
         protected abstract void Activate(SpellBook executing_object);
 
         public void CheckForActivation(Note[] note_queue, SpellBook executing_object) {
@@ -20,6 +22,9 @@ namespace Spells {
                 if (note_queue[i] != activation_code[i]) {
                     return;
                 }
+            }
+            if (activation_song != null) {
+                SoundManager.instance.Play(activation_song);
             }
             Activate(executing_object);
         }

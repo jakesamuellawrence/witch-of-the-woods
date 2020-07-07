@@ -2,7 +2,8 @@
     "name": "Spells",
     "references": [
         "GUID:a1fb562051a419a4aa9eae6cfaa17eaf",
-        "GUID:e8dc84f929a547348b260720fb621904"
+        "GUID:e8dc84f929a547348b260720fb621904",
+        "GUID:a5832f072f485cb418f194e8ea5a90b9"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

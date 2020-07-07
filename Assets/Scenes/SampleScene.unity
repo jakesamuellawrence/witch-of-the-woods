@@ -200,6 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218259530}
   - component: {fileID: 218259529}
+  - component: {fileID: 218259531}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -233,6 +234,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218259531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218259528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4e115e86089634d9d0ba3582d77021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound_effect_prefab: {fileID: 1416040922728551941, guid: 6da87b4570cd3614ca88b5d066a83a48,
+    type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6910,35 +6925,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: spells.Array.size
-      value: 3
+    - target: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: note_sounds.Array.size
+      value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: spells.Array.data[0]
+    - target: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: note_sounds.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 4cf30bfe6efcc024297ca3d1f4ed8be2,
-        type: 2}
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: spells.Array.data[1]
+      objectReference: {fileID: 8300000, guid: 6360c604747330348bfc2ed95f82ce89, type: 3}
+    - target: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: note_sounds.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 4491bd4ebe0865d43acf920695f4a177,
-        type: 2}
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: selected_spell
+      objectReference: {fileID: 8300000, guid: 1199b8c437f4f3149a01962d106221a3, type: 3}
+    - target: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: note_sounds.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
-        type: 2}
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: displayed_spell
+      objectReference: {fileID: 8300000, guid: a222104f7332ed44ea62a5a11e4dcc42, type: 3}
+    - target: {fileID: 974425113, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
+      propertyPath: note_sounds.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
-        type: 2}
-    - target: {fileID: 974425118, guid: a7b449199eca5284ca18be12cf5596b8, type: 3}
-      propertyPath: spells.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 363a73fbdb786f348b6b5b5a5e1f8966,
-        type: 2}
+      objectReference: {fileID: 8300000, guid: 35673205047faff4d9c32cbd5495e5b7, type: 3}
     - target: {fileID: 5067180736252401361, guid: a7b449199eca5284ca18be12cf5596b8,
         type: 3}
       propertyPath: m_Material
